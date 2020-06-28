@@ -1,0 +1,39 @@
+body 
+{
+    font-family: arial;
+}
+
+.container 
+{
+    display: grid;
+    gap: 5px;
+    height: 100vh;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(4, 100px);
+
+    /*Alineado para el grid*/
+
+    /* justify-content | align-content: start end center stretch space-around space-between space-evenly; */
+    justify-content: center;
+    align-content: center;
+
+
+    /* Alineado para los items dentro del grid */
+
+    /* justify-items | align-items: start end center stretch; */
+    /* justify-items: center; Horizontal */
+    /* align-items: center; Vertical */
+
+    /*Cuand los elementos son alineados, pierden la
+    propiedad estretch, y ocupan solo el espacio
+    de su contenido*/
+}
+
+.item 
+{
+    background: lightblue;
+    padding: 10px;
+    border: 1px solid red;
+    /* margin-right: 10px; */
+    /* margin-bottom: 10px; */
+}
